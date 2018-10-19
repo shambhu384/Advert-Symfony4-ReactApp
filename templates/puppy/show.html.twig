@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Puppy{% endblock %}
+
+{% block body %}
+    <h1>Puppy</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ puppy.id }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('puppy_index') }}">back to list</a>
+
+    <a href="{{ path('puppy_edit', {'id': puppy.id}) }}">edit</a>
+
+    {{ include('puppy/_delete_form.html.twig') }}
+{% endblock %}
