@@ -1,0 +1,6 @@
+body {
+    background-color: lightgray;
+}
+.card-header {
+    height: 400px !important;
+}
